@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spglobal-bank-credit-rating-ai-engine"
+version = "1.0.0"
+description = "Bank Credit Rating, Basel III Capital Adequacy, and SACP Engine for S&P Global Ratings Financial Institutions Group"
+authors = [{ name = "Bhupesh Chandra Dimri", email = "bhupeshcdimri21@gmail.com" }]
+dependencies = [
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "streamlit>=1.30.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
